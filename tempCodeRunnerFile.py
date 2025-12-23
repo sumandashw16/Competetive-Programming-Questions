@@ -1,2 +1,3 @@
-a)
-    # print("reqd_area_width = ", reqd_area_width)
+while high - low > eps:
+#     mid = (low + high) / 2
+#     if mid
