@@ -1,13 +1,5 @@
-w, h, n = map(int, input().split())
-
-left = 0
-right = max(w,h)*n
-
-while(left<right):
-    mid = (left + right) // 2
-    if(mid//w * mid//h > n):
-        right = mid
-    else:
-        left = mid + 1
-print(left)
-
+x = [-3,6,1,8,5,-5,-3,8,8,1,4]
+i = 0
+j = 3
+sum = sum(x[:4])
+print(sum)
