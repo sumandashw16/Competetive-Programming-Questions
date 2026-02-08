@@ -1,3 +1,5 @@
+# remember in sliding window problems you use i for shirking and j for expanding
+
 x = [-3,6,1,8,5,-5,-3,8,8,1,4]
 i = 0
 j = 3
