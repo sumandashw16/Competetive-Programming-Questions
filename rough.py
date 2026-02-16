@@ -1,13 +1,13 @@
-z = int(input())
-for _ in range(z):
+t = int(input())
+for _ in range(t):
     n = int(input())
-    p = list(map(int, input().split()))
     a = list(map(int, input().split()))
-    pos = {v:i for i,v in enumerate(p)}
-    possible = True
-    for i in range(1,n):
-        if a[i] != a[i-1] and pos[a[i]] < pos[a[i-1]]:
-            possible = False
-            break
-
-    print("YES" if possible else "NO")
+    count = 0
+    i = 0
+    while i < n - 1:
+        if a[i] == a[i+1] or a[i] + a[i+1] == 7:
+            count += 1
+            i += 2
+        else:
+            i += 1
+    print(count)
